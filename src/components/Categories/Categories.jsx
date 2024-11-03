@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 
 const Categories = ({ categories }) => {
     return (
@@ -6,12 +6,12 @@ const Categories = ({ categories }) => {
             <div role="tablist" className="tabs tabs-lifted">
                 {
                     categories.map(category => (
-                        <Link
+                        <NavLink
                          key={category.category}
                           to={`/category/${category.category}`} 
-                          role="tLinkb" className="tab">
+                          role="tab" className={({isActive})=>`tab ${isActive?'tab-active':''}`}>
                             {category.category}
-                        </Link>
+                        </NavLink>
                     ))
                 }
             </div>
