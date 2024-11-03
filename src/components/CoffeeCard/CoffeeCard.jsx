@@ -29,6 +29,8 @@ const CoffeeCard = () => {
         </div>
         <button onClick={()=>navigate('/coffees')}
          className="btn bg-yellow-500">View All</button>
+        {/* <button onClick={()=>setCoffees(data)}
+         className="btn bg-yellow-500">View All</button> */}
        </div>
     );
 };
