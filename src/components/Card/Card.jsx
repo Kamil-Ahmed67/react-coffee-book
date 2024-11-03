@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const Card = ({coffee}) => {
     const{name,image,category,origin,type,id,rating,popularity}=coffee || {};
     return (
